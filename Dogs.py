@@ -2,12 +2,15 @@ class Doggo():
     def __init__(self, name, breed):
         self.name = name
         self.breed = breed
+        return
 
     def bark(self):
         print("Bork!")
+        return
 
     def bark2(self):
         print("Woof!")
+        return
 
 
 my_doggo = Doggo("Kiara", "beagle")
