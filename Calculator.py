@@ -47,17 +47,26 @@ while True:
         result = str(operator.mul(num1, num2))
         print(num1, "*", num2, "=", result)
     elif user_input == "/":
-        result = str(operator.truediv(num1, num2))
-        print(num1, "/", num2, "=", result)
+        try:
+            result = str(operator.truediv(num1, num2))
+            print(num1, "/", num2, "=", result)
+        except ZeroDivisionError:
+            print("Error: division by zero. Pick another denominator.")
     elif user_input == "powt":
         result = str(operator.pow(num1, num2))
         print(num1, "^", num2, "=", result)
     elif user_input == "//":
-        result = str(operator.floordiv(num1, num2))
-        print(num1, "//", num2, "=", result)
+        try:
+            result = str(operator.floordiv(num1, num2))
+            print(num1, "//", num2, "=", result)
+        except ZeroDivisionError:
+            print("Error: division by zero. Pick another denominator.")
     elif user_input == "%":
-        result = str(operator.mod(num1, num2))
-        print(num1, "%", num2, "=", result)
+        try:
+            result = str(operator.mod(num1, num2))
+            print(num1, "%", num2, "=", result)
+        except ZeroDivisionError:
+            print("Error: division by zero. Pick another denominator.")
     else:
         print("-----------------------------------------------------------")
         print("Unknown operator. Please select a listed type of operation.")
