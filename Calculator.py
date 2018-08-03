@@ -25,7 +25,7 @@ while True:
           "Type the symbol for the operation you want to do:\n"
           "(Type \'quit\' to end the program.)")
     print("----------------------------------------------------")
-    user_input = input("Operator: ")
+    user_input = input("Select the operator: ")
     if user_input == "quit":
         print("Bye!")
         sys.exit()
