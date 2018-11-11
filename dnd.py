@@ -70,7 +70,7 @@ while hero["stats"]["hp"] > 0 or goblin["stats"]["hp"] > 0:
                 print("Critical hit against you (20):")
                 crit_dmg(hero)
             if ret_roll_1 < hero["armor"]:
-                print("[Hit: {}] Goblin misses its attack of opportunity.".format(ret_roll_1))
+                print("[Roll: {}] Goblin misses its attack of opportunity.".format(ret_roll_1))
     else:
         print("Goblin attacks you!")
         hit_roll_2 = randint(1, 20)
